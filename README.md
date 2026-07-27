@@ -7,7 +7,31 @@ Topology and Exact Structured Circuit Synthesis
 Eigensolver (GQE) Using NVIDIA CUDA-Q  
 **Submission phase:** Phase 3 — Prototype Development
 
-[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150" alt="Launch on qBraid">](https://account.qbraid.com?gitHubUrl=https://github.com/PR2aid/gic2026_Mitsubishi_AIST.git)
+### Repository:
+
+https://github.com/PR2aid/Mitsubishi.git
+
+The best way is to download this package locally, then  package to qBrain then run the bellow commants:
+
+### To run locally
+
+```bash
+
+unzip Mitsubishi-main.zip
+
+cd ~/Mitsubishi-main/Source_Code
+
+python3 -m venv .venv-local
+source .venv-local/bin/activate
+python -m pip install -r requirements.txt
+
+python run_all_local.py
+
+```
+
+then the result can be seen both on the screen and is saved in
+
+
 
 This archive is the authoritative submission package. It contains the
 official cover page, five technical pages, one references page, all source
@@ -17,6 +41,8 @@ qBraid reproduction notebook.
 
 The reproduction is CPU-only and credential-free. It does not import a
 quantum provider, submit a QPU job, consume quantum credits, or require a GPU.
+
+[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150" alt="Launch on qBraid">](https://account.qbraid.com?gitHubUrl=https://github.com/PR2aid/Mitsubishi.git)
 
 ## Judge quick start
 
