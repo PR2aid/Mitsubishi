@@ -21,16 +21,19 @@ unzip Mitsubishi-main.zip
 
 cd ~/Mitsubishi-main/Source_Code
 
-python3 -m venv .venv-local
-source .venv-local/bin/activate
-python -m pip install -r requirements.txt
+export QBRAID_GQE_ENV=~/Mitsubishi-main/.qbraid_gqe_env_clean
 
-python run_all_local.py
+PYTHON_BIN=python bash setup.sh
+
+"$QBRAID_GQE_ENV/bin/python" \
+  -I -B certify_release.py --full
 
 ```
 
 then the result can be seen both on the screen and is saved in
 
+thanks dear so the results will be in ~/Mitsubishi-main/Source_Code/results/judge_reproduction/latest_certificate.json 
+and ~/Mitsubishi-main/Source_Code/results/judge_reproduction/latest_run.json
 
 
 This archive is the authoritative submission package. It contains the
