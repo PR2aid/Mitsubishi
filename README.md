@@ -36,54 +36,6 @@ thanks dear so the results will be in ~/Mitsubishi-main/Source_Code/results/judg
 and ~/Mitsubishi-main/Source_Code/results/judge_reproduction/latest_run.json
 
 
-This archive is the authoritative submission package. It contains the
-official cover page, five technical pages, one references page, all source
-code, checksum-bound frozen scientific inputs, a complete exact
-126-distribution lock with a deterministic installer, tests, and a one-click
-qBraid reproduction notebook.
-
-The reproduction is CPU-only and credential-free. It does not import a
-quantum provider, submit a QPU job, consume quantum credits, or require a GPU.
-
-[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150" alt="Launch on qBraid">](https://account.qbraid.com?gitHubUrl=https://github.com/PR2aid/Mitsubishi.git)
-
-## Judge quick start
-
-1. Upload and extract
-   `QuantumPatternRecognition_MitsubishiAIST_Phase3.zip` in qBraid Lab.
-2. Open `Source_Code/QBRAID_RUNME.ipynb`.
-3. Select a **Python 3.12** kernel.
-4. Choose **Run → Run All Cells** and leave the Lab session open.
-5. Accept the run only when the final cell displays:
-
-   ```text
-   ALL REQUESTED PHASE 3 RESULTS REPRODUCED WITHIN DECLARED TOLERANCES
-   ```
-
-During successful certification, Cell 5 prints these markers in order:
-
-```text
-VALIDATION PASS: <number> passed, 0 failed
-ALL REQUESTED PHASE 3 RESULTS REPRODUCED WITHIN DECLARED TOLERANCES
-<path to reproduction_summary.json>
-PASS: invocation-bound certificate written to .../certificate.json
-```
-
-The final notebook cell then reads the current certificate and run pointer,
-asserts their PASS status, prints their paths, and repeats the success banner.
-Its certificate assertion is:
-
-```json
-{
-  "status": "PASS",
-  "mode": "full"
-}
-```
-
-If any scientific comparison, environment check, test, or artifact binding
-fails, the command exits nonzero and the notebook stops. An older PASS is not
-accepted as the result of a failed current invocation.
-
 ## What is saved, and where
 
 The result is both displayed on screen and saved to machine-readable files.
@@ -381,41 +333,23 @@ The identity guard prevented degradation. At LiH-40 the QSCI arm changed the
 raw policy but did not pass the predeclared held-out promotion rule; exact
 energy remains the selected objective.
 
-### Other fixed checks
+## Intellectual-property and licensing boundary
 
-- BeH₂-6 finite-shot Aer: 9 commuting groups × 20,000 shots = 180,000
-  simulator shots, seed 7.
-- BeH₂-6 exact QPD: 10,000 algebraic branches, 4+2 fragment widths, absolute
-  energy difference at most `1×10⁻¹⁰ Ha`.
-- CUDA-Q `qpp-cpu`: 6- and 12-qubit state-energy convention checks agree
-  within `1×10⁻¹⁰ Ha`.
-- Warm-start embedded-state fidelity is at least `0.9999999999`, but complete
-  cascades require `2.172×` the direct final-rung energy evaluations; no total
-  acceleration is claimed.
+The supplied implementation and evidence are limited to the files in this
+release and are sufficient for the credential-free reproduction above.
+Rights in submitted material are governed by the applicable Global Industry
+Challenge rules, participant agreement, and Aqora terms. This notice does not
+limit, replace, or modify those rights. Apart from those rights and applicable
+third-party licences, no additional public software or patent licence is
+granted; see `Source_Code/LICENSE`.
 
-## Historical physical-QPU record
+Certain subject matter in and related to this submission is disclosed in
+Australian Provisional Patent Application No. 2026906569 and other pending
+Australian provisional patent applications; no granted patent is claimed. For
+enquiries about a separate licence concerning rights not already granted under
+the competition instruments, contact <admin@pr2aid.com> or
+<azadeh.alavi@rmit.edu.au>.
 
-The package preserves and validates a previous four-qubit H₂ Pauli-pool
-Transformer-GQE circuit executed on IonQ Forte-1 through qBraid:
-
-| Item | Recorded value |
-|---|---|
-| Logical qubits | 4 |
-| Requested / returned shots | 350 / 350 |
-| Observable | `X₀ ⊗ X₁ ⊗ Y₂ ⊗ Y₃` |
-| Ideal / measured expectation | −0.210899 / −0.142857 |
-| Exact 95% interval | [−0.247808, −0.035469] |
-| Source-level CX / submitted logical depth | 58 / 108 |
-| qBraid credits / provider duration | 2,830 / 277.264 s |
-
-The full judge run reconstructs the circuit and validates the preserved count
-record locally. It does not contact Forte-1. This single observable is not an
-energy, fidelity, entanglement certificate, chemical-accuracy result, or
-quantum-advantage demonstration.
-
-`Source_Code/forte/FORTE_HARDWARE_RUN.ipynb` is optional. Its default
-`CONTACT_QBRAID=False`; Run All does not import a provider or create a job.
-Judges do not need hardware access.
 
 ## Failure and retry guidance
 
