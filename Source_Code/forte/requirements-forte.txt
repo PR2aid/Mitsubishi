@@ -1,0 +1,6 @@
+# Optional physical-QPU environment only. Do not install these pins into the
+# main CUDA-QX .qbraid_gqe_env. Restart the qBraid-SDK kernel after installation.
+numpy==2.4.6
+qiskit==2.5.0
+qbraid==0.12.2
+qbraid-core==0.3.7

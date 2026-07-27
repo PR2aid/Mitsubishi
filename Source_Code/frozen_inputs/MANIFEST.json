@@ -1,0 +1,564 @@
+{
+  "environment": {
+    "packages": {
+      "numpy": "2.5.1",
+      "pyscf": "2.14.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0"
+    },
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.39",
+    "python": "3.12.13",
+    "threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "generated_utc": "2026-07-22T03:53:08.316229+00:00",
+  "problems": {
+    "BeH2_no3": {
+      "array_sha256": {
+        "eri": "2c614df91b9b839a45fe815149e90ea44c0c67b187630f75cd4603eafbaf7702",
+        "fock_diag": "9d9d09aece6dc908978119fd1e9d6727b630a11c988febae590554be4ebaf22b",
+        "h1e": "7e689ca5fbe3e348024f191c1e543d4d1014f060b46e38fe866d2e72ade511d8",
+        "mo_coeff_active": "43b4dc3d1f02c6f5e2a6518a1b32231a202689159b392c293cfbae8f0e14fdaa",
+        "mo_energy_active": "b82f73ae7d8ec0b8ca61796653a7cfc8319d38e318dfc759b7f7631c465e7d2e",
+        "mo_occ_active": "f0e4ef9a608db16ab6fe0827d9c00de81da781c6e1abc3f03d912f68fb259661",
+        "nelec": "87eb69fe4533676c2b35796d89b29bd088bebe7490910f6f5911c9ed930562ef",
+        "t_pair": "147b9c67fcd0c4e16d517d83257afe3ba008ebb867edcba59b7eb795f2545a83"
+      },
+      "bundle_file": "BeH2_no3.npz",
+      "bundle_sha256": "935ddd35b3e476fc7256790a8fa3426fde093295f914bb70399625163ddae7d7",
+      "casci_energy_hartree": -15.768340714344912,
+      "ecore_hartree": -11.820188545582873,
+      "meta": {
+        "atom": "Be 0 0 0; H 0 0 1.33; H 0 0 -1.33",
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "molecule": "BeH2",
+        "ncore": 1,
+        "nelec_active": 4,
+        "nested_from_max_norb": 8,
+        "orbital_basis": "canonical",
+        "sector_dim": 9,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 6,
+      "name": "BeH2_no3_q6",
+      "nelec_alpha_beta": [
+        2,
+        2
+      ],
+      "norb": 3,
+      "repeat_build_fingerprints": [
+        "8340dddbc6d416ea6c484890cb3dc6f215c3e3dbb26526f5b0cf19059166b42d",
+        "8340dddbc6d416ea6c484890cb3dc6f215c3e3dbb26526f5b0cf19059166b42d"
+      ],
+      "rhf_energy_hartree": -15.767319227638554,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "8340dddbc6d416ea6c484890cb3dc6f215c3e3dbb26526f5b0cf19059166b42d",
+      "sector_dimension": 9,
+      "source": {
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Be 0 0 0; H 0 0 1.33; H 0 0 -1.33",
+        "molecule": "BeH2",
+        "nested_max_active_orbitals": 8,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "BeH2_no6": {
+      "array_sha256": {
+        "eri": "8c96c28af6d18336b55506e13072413342583c498df42322abdcce481fafce24",
+        "fock_diag": "8e5d90c8e9b68ff7c88b74e2555c36678785161cf663f745da3aaed0e8fe7f52",
+        "h1e": "b50e8381196d9cb176d3053a248acdad45eeb6d33b001bb0e1042bf72cfdc56b",
+        "mo_coeff_active": "0ba1ebcb4557f5363d02c16d22326dc08b99662b6f3f196ce61bcf88b0cd4192",
+        "mo_energy_active": "5a0d6789f5e7cfee23e5b06ccc0e678d88de37637678045e5506e45b2cbe7794",
+        "mo_occ_active": "73796e4fd02a7e3f4c858c0c1bde692eba8166110b233e306eabfadb63f031b3",
+        "nelec": "87eb69fe4533676c2b35796d89b29bd088bebe7490910f6f5911c9ed930562ef",
+        "t_pair": "952ffb9fb675f83d1d4b286c45a9959af6128fa46d13184807a45d3f2c750c97"
+      },
+      "bundle_file": "BeH2_no6.npz",
+      "bundle_sha256": "a2345c6d1ca81a9d733e825216e7850440e8c239ca11a8e4463086421ac27571",
+      "casci_energy_hartree": -15.771291942266181,
+      "ecore_hartree": -11.820188545582873,
+      "meta": {
+        "atom": "Be 0 0 0; H 0 0 1.33; H 0 0 -1.33",
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "molecule": "BeH2",
+        "ncore": 1,
+        "nelec_active": 4,
+        "nested_from_max_norb": 8,
+        "orbital_basis": "canonical",
+        "sector_dim": 225,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 12,
+      "name": "BeH2_no6_q12",
+      "nelec_alpha_beta": [
+        2,
+        2
+      ],
+      "norb": 6,
+      "repeat_build_fingerprints": [
+        "6dcd82fe8f99cb01f3e27ec0c007ed667ed02f872b63be9a741c5a95d487f7ee",
+        "6dcd82fe8f99cb01f3e27ec0c007ed667ed02f872b63be9a741c5a95d487f7ee"
+      ],
+      "rhf_energy_hartree": -15.767319227638554,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "6dcd82fe8f99cb01f3e27ec0c007ed667ed02f872b63be9a741c5a95d487f7ee",
+      "sector_dimension": 225,
+      "source": {
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Be 0 0 0; H 0 0 1.33; H 0 0 -1.33",
+        "molecule": "BeH2",
+        "nested_max_active_orbitals": 8,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "BeH2_no8": {
+      "array_sha256": {
+        "eri": "a26c542df4e6f105b8c26d458fb7adf7c96ec7f785c2d3c97956d1188dc0efe8",
+        "fock_diag": "b3f6e572101df48386f42faa6859c9b350c94ace289ab1d65883fe80693aa247",
+        "h1e": "932076df79195162e89aa12b31ab5e4343cebdf730358bbe0ec568b03f1a395f",
+        "mo_coeff_active": "2bd7dbc3b6098f3a0fdae075746f25d50ce14f438e0c3327b27ac0367cf0e7d9",
+        "mo_energy_active": "7a87a4a9a6929f40243715bcc6b499ac6cba39534f835ce593a14000f659c337",
+        "mo_occ_active": "2f403839d93d07386479ba218f692c50dbdfc852858af4d02545160ffded8f3c",
+        "nelec": "87eb69fe4533676c2b35796d89b29bd088bebe7490910f6f5911c9ed930562ef",
+        "t_pair": "89e9026d9b46770dcdf9e6088454ab2c189b448aa310908fb715cc3efe8092b1"
+      },
+      "bundle_file": "BeH2_no8.npz",
+      "bundle_sha256": "2fd9ff5437e054e44176a86ee94782396804b1d2bd9251f6c94429b74ccb73a9",
+      "casci_energy_hartree": -15.775670851377203,
+      "ecore_hartree": -11.820188545582873,
+      "meta": {
+        "atom": "Be 0 0 0; H 0 0 1.33; H 0 0 -1.33",
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "molecule": "BeH2",
+        "ncore": 1,
+        "nelec_active": 4,
+        "nested_from_max_norb": 8,
+        "orbital_basis": "canonical",
+        "sector_dim": 784,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 16,
+      "name": "BeH2_no8_q16",
+      "nelec_alpha_beta": [
+        2,
+        2
+      ],
+      "norb": 8,
+      "repeat_build_fingerprints": [
+        "e62b3d07b8b18af386780e9bce937855cf812ce417d32fdb47dbc1a882bc903b",
+        "e62b3d07b8b18af386780e9bce937855cf812ce417d32fdb47dbc1a882bc903b"
+      ],
+      "rhf_energy_hartree": -15.767319227638554,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "e62b3d07b8b18af386780e9bce937855cf812ce417d32fdb47dbc1a882bc903b",
+      "sector_dimension": 784,
+      "source": {
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Be 0 0 0; H 0 0 1.33; H 0 0 -1.33",
+        "molecule": "BeH2",
+        "nested_max_active_orbitals": 8,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "H2O_no6": {
+      "array_sha256": {
+        "eri": "1344b9f580b17eba832a41b0eb7353aa91296fd38a2a2453eb85d5d560dabd22",
+        "fock_diag": "d3b32660e5b5b1a62460d011854e51e63bc29aa783f512c68e0bfbd60e0911d2",
+        "h1e": "46875cedd91c73eeb212df57b8571c77385465f109ec1f9df376604bbc3671f4",
+        "mo_coeff_active": "ff32aade170f180418cfcb8d7c7a5f43e651670dd0370e9a6833724c9f915f69",
+        "mo_energy_active": "73fe5aadd11d39e4ed2b0d684eb294717c1ea38e21e7bfb0e6db5dad1ffafdcd",
+        "mo_occ_active": "30a256c6dbf047c3c3c742d3e6ce96a88ebdcf4dd264be32c7b5279a939b29a3",
+        "nelec": "0feaa6464c7b8d3ba3db41b8417fbff2a8e567233cf86a6aad02236145067c7e",
+        "t_pair": "5587dfa568d8ff45296298b553453a8aaf98ce9b8c08f0863aca63e389e1a3ab"
+      },
+      "bundle_file": "H2O_no6.npz",
+      "bundle_sha256": "5837e58fd17ece4f6e470d9f96dbc1313794499c072718d90f24fb3a272fa095",
+      "casci_energy_hartree": -76.03254888729583,
+      "ecore_hartree": -52.20195256042463,
+      "meta": {
+        "atom": "H -0.021 -0.002 0; O 0.835 0.452 0; H 1.477 -0.273 0",
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "molecule": "H2O",
+        "ncore": 1,
+        "nelec_active": 8,
+        "nested_from_max_norb": 6,
+        "orbital_basis": "canonical",
+        "sector_dim": 225,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 12,
+      "name": "H2O_no6_q12",
+      "nelec_alpha_beta": [
+        4,
+        4
+      ],
+      "norb": 6,
+      "repeat_build_fingerprints": [
+        "19c6a3e7872d77caeae8179ee4c7d33f82e57bf8c8035e504d2a4d7becb9a2d4",
+        "19c6a3e7872d77caeae8179ee4c7d33f82e57bf8c8035e504d2a4d7becb9a2d4"
+      ],
+      "rhf_energy_hartree": -76.02601748382888,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "19c6a3e7872d77caeae8179ee4c7d33f82e57bf8c8035e504d2a4d7becb9a2d4",
+      "sector_dimension": 225,
+      "source": {
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "H -0.021 -0.002 0; O 0.835 0.452 0; H 1.477 -0.273 0",
+        "molecule": "H2O",
+        "nested_max_active_orbitals": 6,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "LiH_no20": {
+      "array_sha256": {
+        "eri": "5350ca8e4249aee2f1219f0ba825ee74aacf811fc212d1d3875f1e3043b34a75",
+        "fock_diag": "03a9cace77f15854690506d775243cee372bdeae7c2f76d51c704cba1e5eabe9",
+        "h1e": "de5aa62d699210160841261c89b3fbcd59f551d370f09b34d09d88eea7f94497",
+        "mo_coeff_active": "d583e11aff45b45320184b3edc593ac835bccf006bcc195f6021f459d05573c9",
+        "mo_energy_active": "b72eed68a569cf46cb0fbb3a4f8c6498c955f5c7cbc80058ec18fe8a6f8f0e95",
+        "mo_occ_active": "cea120d5c5019eabbcca1d4008a67787a091aed6777f79ba3dac4a59ec08bf91",
+        "nelec": "4253462e070e4edaeafc83882f73fb8d7d31381451a08e26474c08fa05b273c6",
+        "t_pair": "dd2ed0ff9ff9c12eef02ee48e02e3fc2a38cba5ddeb22a3433eb510a1e66d84a"
+      },
+      "bundle_file": "LiH_no20.npz",
+      "bundle_sha256": "97c7ae0d9b1cc230f505a27e0bc6fb391f72ccf67b1a6678cec706943be93d21",
+      "casci_energy_hartree": -7.978231817584356,
+      "ecore_hartree": -6.995185530549765,
+      "meta": {
+        "atom": "Li 0 0 0; H 0 0 2.2",
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "molecule": "LiH",
+        "ncore": 1,
+        "nelec_active": 2,
+        "nested_from_max_norb": 24,
+        "orbital_basis": "canonical",
+        "sector_dim": 400,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 40,
+      "name": "LiH_no20_q40",
+      "nelec_alpha_beta": [
+        1,
+        1
+      ],
+      "norb": 20,
+      "repeat_build_fingerprints": [
+        "a3ef615866b5e64f8b1dfd6f80bed9a07d2e48241253366e4e1eb1368f039dd4",
+        "a3ef615866b5e64f8b1dfd6f80bed9a07d2e48241253366e4e1eb1368f039dd4"
+      ],
+      "rhf_energy_hartree": -7.961845699861783,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "a3ef615866b5e64f8b1dfd6f80bed9a07d2e48241253366e4e1eb1368f039dd4",
+      "sector_dimension": 400,
+      "source": {
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Li 0 0 0; H 0 0 2.2",
+        "molecule": "LiH",
+        "nested_max_active_orbitals": 24,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "LiH_no22": {
+      "array_sha256": {
+        "eri": "1db63ccbadb8a82dcf4ce6fe3e29767664b22b898f5f626596038e39a2c3d813",
+        "fock_diag": "f2889cb11e01c512a9b7bf7278ebcf7f87dcee40b252a88ddbe785ee6c0dad4d",
+        "h1e": "091751b04938af5146670e652348effd487042347038bed87227dbb803d1f05a",
+        "mo_coeff_active": "96a40c92b2af083150f82a32651810f0386009a1b305e41ad297a966c63186b0",
+        "mo_energy_active": "0e036bc56b97db31c73baa0451d281dcb44535602e284da724b891fb0075f114",
+        "mo_occ_active": "ff2fdf7513e80caddb11c0608fdbf5907e2b221d6d4ea67db92d8fdcc6857903",
+        "nelec": "4253462e070e4edaeafc83882f73fb8d7d31381451a08e26474c08fa05b273c6",
+        "t_pair": "5435f074978d8ab6798a709d67d2f76de5627bf80fde6463494fd715dc706e55"
+      },
+      "bundle_file": "LiH_no22.npz",
+      "bundle_sha256": "fec39cf7a9595deeafef97916e3cd4b5d175dd4aee6b6ea81c78d31845b7f4e7",
+      "casci_energy_hartree": -7.980784932582742,
+      "ecore_hartree": -6.995185530549765,
+      "meta": {
+        "atom": "Li 0 0 0; H 0 0 2.2",
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "molecule": "LiH",
+        "ncore": 1,
+        "nelec_active": 2,
+        "nested_from_max_norb": 24,
+        "orbital_basis": "canonical",
+        "sector_dim": 484,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 44,
+      "name": "LiH_no22_q44",
+      "nelec_alpha_beta": [
+        1,
+        1
+      ],
+      "norb": 22,
+      "repeat_build_fingerprints": [
+        "d8db45bf7a20d6cb4bc1fbb14a55b6fb3c3878f9bf85cd3d7e072a39aa7fbcef",
+        "d8db45bf7a20d6cb4bc1fbb14a55b6fb3c3878f9bf85cd3d7e072a39aa7fbcef"
+      ],
+      "rhf_energy_hartree": -7.961845699861783,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "d8db45bf7a20d6cb4bc1fbb14a55b6fb3c3878f9bf85cd3d7e072a39aa7fbcef",
+      "sector_dimension": 484,
+      "source": {
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Li 0 0 0; H 0 0 2.2",
+        "molecule": "LiH",
+        "nested_max_active_orbitals": 24,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "LiH_no24": {
+      "array_sha256": {
+        "eri": "8f2a7390ca6dcd22570f67691199d47fca47904fddfba23e3457a889ded45610",
+        "fock_diag": "3ca06639cedf273b3cbf227721067cbaf97bea6a22fd53be592252096acbd77d",
+        "h1e": "4e49629085f5aa2e37d6d8be201d9a226d613ed1c399c63f919ba2320b91d565",
+        "mo_coeff_active": "c0d1939bb2cdfdce09425515ee7271b6a4573a578ab7d103cb94d93f3cd29dde",
+        "mo_energy_active": "19f8caa9cedb8528e1abad273a2cf927916201cb981548b0774c79d262379378",
+        "mo_occ_active": "6c8a40ea6ccdbc7e75f12cbc8c15ac7f8ea1febbc3b31b1fc3864822ab79092f",
+        "nelec": "4253462e070e4edaeafc83882f73fb8d7d31381451a08e26474c08fa05b273c6",
+        "t_pair": "76f7b0a3526e699f183ff583a29b3ea49bf239b7e14af27b286baf415626c4d4"
+      },
+      "bundle_file": "LiH_no24.npz",
+      "bundle_sha256": "3fca74e1708c771d5bca806f83661bc91f5c530f75cc29850228888078ddff96",
+      "casci_energy_hartree": -7.981043282265893,
+      "ecore_hartree": -6.995185530549765,
+      "meta": {
+        "atom": "Li 0 0 0; H 0 0 2.2",
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "molecule": "LiH",
+        "ncore": 1,
+        "nelec_active": 2,
+        "nested_from_max_norb": 24,
+        "orbital_basis": "canonical",
+        "sector_dim": 576,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 48,
+      "name": "LiH_no24_q48",
+      "nelec_alpha_beta": [
+        1,
+        1
+      ],
+      "norb": 24,
+      "repeat_build_fingerprints": [
+        "774c9ed77c2615cd29dc3adf2297d52baa9cd0dffef5eb1ff3f2323513c15715",
+        "774c9ed77c2615cd29dc3adf2297d52baa9cd0dffef5eb1ff3f2323513c15715"
+      ],
+      "rhf_energy_hartree": -7.961845699861783,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "774c9ed77c2615cd29dc3adf2297d52baa9cd0dffef5eb1ff3f2323513c15715",
+      "sector_dimension": 576,
+      "source": {
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Li 0 0 0; H 0 0 2.2",
+        "molecule": "LiH",
+        "nested_max_active_orbitals": 24,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "LiH_no3": {
+      "array_sha256": {
+        "eri": "7e2b8685e55d83f0aa9899aee0b96ff2aa050ee06ef3f7ae568899deb5a12516",
+        "fock_diag": "de5bd36892cbbf0514758cd9d46d4f7852ec8fe5f3c26d97172025ae757ff624",
+        "h1e": "47add50b00c71185de04b322551865a6bf99b43f73e96d7219508858b0792be5",
+        "mo_coeff_active": "96cdcb98984fe553df2b79e22f7ece38a0dc03ac4db7f4e341a8c3dab56e48b9",
+        "mo_energy_active": "54df698904b89c99bafda83204d0a39f84bba01443ada8f36d1c0d873456a714",
+        "mo_occ_active": "5196e11ea12b2c2174953378e22c6f56ae12b6708b5e7193cd5622a0a67db294",
+        "nelec": "4253462e070e4edaeafc83882f73fb8d7d31381451a08e26474c08fa05b273c6",
+        "t_pair": "0951aa3ef3f73641dbea10fbdce91b419a3d0db442c7ceed3112160099f725b3"
+      },
+      "bundle_file": "LiH_no3.npz",
+      "bundle_sha256": "36df82d0a51c374094d256c287e94ea11b3f6e3565267612fdc7fc0119b3fc0e",
+      "casci_energy_hartree": -7.961969751155841,
+      "ecore_hartree": -6.995185530549765,
+      "meta": {
+        "atom": "Li 0 0 0; H 0 0 2.2",
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "molecule": "LiH",
+        "ncore": 1,
+        "nelec_active": 2,
+        "nested_from_max_norb": 24,
+        "orbital_basis": "canonical",
+        "sector_dim": 9,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 6,
+      "name": "LiH_no3_q6",
+      "nelec_alpha_beta": [
+        1,
+        1
+      ],
+      "norb": 3,
+      "repeat_build_fingerprints": [
+        "6ec4930e88d3058da2006f5621eb74c31f439ee282e4023bc0ec7efdc19258b7",
+        "6ec4930e88d3058da2006f5621eb74c31f439ee282e4023bc0ec7efdc19258b7"
+      ],
+      "rhf_energy_hartree": -7.961845699861783,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "6ec4930e88d3058da2006f5621eb74c31f439ee282e4023bc0ec7efdc19258b7",
+      "sector_dimension": 9,
+      "source": {
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Li 0 0 0; H 0 0 2.2",
+        "molecule": "LiH",
+        "nested_max_active_orbitals": 24,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "LiH_no6": {
+      "array_sha256": {
+        "eri": "13c93b0cb20a6f493863717afc9e1de26893939f883c701aed9ff793a31c767d",
+        "fock_diag": "3e083cbca8041e94eabf4a79ebcfd016773e908ec1bdd1167da05ab68b2aa7cd",
+        "h1e": "720403af1574f409ab581c2e7530cc7e68b10d7f81206c30f382f162805ca254",
+        "mo_coeff_active": "beeee5d9597d004de5276a41c4cd6d89d4864ad839de61384811daf51ea22122",
+        "mo_energy_active": "c0f8d3f93f8f0d3c3d648b1c84f841112f05d8c1eb29333900c23cc2cf2b4fc5",
+        "mo_occ_active": "e8e384af1a851e04e94d97a5b2676a83f0eb761d167b5aa90c9db283f0b0c571",
+        "nelec": "4253462e070e4edaeafc83882f73fb8d7d31381451a08e26474c08fa05b273c6",
+        "t_pair": "7450f192cb1a272dacf4fd5e3492a7368de5f441637423dc6dae48e7718588b1"
+      },
+      "bundle_file": "LiH_no6.npz",
+      "bundle_sha256": "20c09283ae0be8fb2eafc69423507e3e8b270b0ded4ce61d24e2f4bf78a2e17d",
+      "casci_energy_hartree": -7.962097119344613,
+      "ecore_hartree": -6.995185530549765,
+      "meta": {
+        "atom": "Li 0 0 0; H 0 0 2.2",
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "molecule": "LiH",
+        "ncore": 1,
+        "nelec_active": 2,
+        "nested_from_max_norb": 24,
+        "orbital_basis": "canonical",
+        "sector_dim": 36,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 12,
+      "name": "LiH_no6_q12",
+      "nelec_alpha_beta": [
+        1,
+        1
+      ],
+      "norb": 6,
+      "repeat_build_fingerprints": [
+        "57fd1535d889b998ea34df789ce78230d906a8713a21263bace0b74fb6e29bb0",
+        "57fd1535d889b998ea34df789ce78230d906a8713a21263bace0b74fb6e29bb0"
+      ],
+      "rhf_energy_hartree": -7.961845699861783,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "57fd1535d889b998ea34df789ce78230d906a8713a21263bace0b74fb6e29bb0",
+      "sector_dimension": 36,
+      "source": {
+        "basis": "aug-cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 1,
+        "geometry": "Li 0 0 0; H 0 0 2.2",
+        "molecule": "LiH",
+        "nested_max_active_orbitals": 24,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    },
+    "N2_no8": {
+      "array_sha256": {
+        "eri": "e7e3c2ac6550e6a5aa424c44540b1e55bca3486e9f9097b033856fe9ea27c19f",
+        "fock_diag": "c1e3619b88407f78baa4f199a229bb5c780622a52fc2a7c38149f8b6740d63cd",
+        "h1e": "974d56adb2eae6136f4c0804a688dd0a84dfc3e45b2a84ea72b4cabaee9f085a",
+        "mo_coeff_active": "2a90de9a85d07059be22c383815a55976d5d1f2a1828b444e1d51497a6944505",
+        "mo_energy_active": "1a585b769f7f34ce626cc2763f0c4f3d649ba7b60085b697b60ec54fecf199f8",
+        "mo_occ_active": "bdd9bafddc9f7ae783364fafd744a6580a59479730d66e42ce4985f7a6764731",
+        "nelec": "e382a39a9b71edde5680fae3b768b9644a4a052c7f7f44277ca2d7d6419d07d2",
+        "t_pair": "f7cc06185a7bd75fb266457e639a98d7694b383fc0eb978dbef345ab185c0f75"
+      },
+      "bundle_file": "N2_no8.npz",
+      "bundle_sha256": "65359ec7f95eedacf1fbb7b19a28c3222c3bb431337915ba65ebe95e1ac77f97",
+      "casci_energy_hartree": -109.03438034840212,
+      "ecore_hartree": -77.4141301152535,
+      "meta": {
+        "atom": "N 0 0 0; N 0 0 1.0977",
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "molecule": "N2",
+        "ncore": 2,
+        "nelec_active": 10,
+        "nested_from_max_norb": 8,
+        "orbital_basis": "canonical",
+        "sector_dim": 3136,
+        "spin": 0,
+        "unit": "Angstrom"
+      },
+      "n_qubits": 16,
+      "name": "N2_no8_q16",
+      "nelec_alpha_beta": [
+        5,
+        5
+      ],
+      "norb": 8,
+      "repeat_build_fingerprints": [
+        "43325c7212afc53c1f61acfb0f5ae690df62b5cf439956972b5c7b80f12dd2a5",
+        "43325c7212afc53c1f61acfb0f5ae690df62b5cf439956972b5c7b80f12dd2a5"
+      ],
+      "rhf_energy_hartree": -108.95412801374495,
+      "schema_version": 1,
+      "scientific_fingerprint_sha256": "43325c7212afc53c1f61acfb0f5ae690df62b5cf439956972b5c7b80f12dd2a5",
+      "sector_dimension": 3136,
+      "source": {
+        "basis": "cc-pvdz",
+        "charge": 0,
+        "frozen_core_orbitals": 2,
+        "geometry": "N 0 0 0; N 0 0 1.0977",
+        "molecule": "N2",
+        "nested_max_active_orbitals": 8,
+        "spin": 0,
+        "unit": "Angstrom"
+      }
+    }
+  },
+  "purpose": "deterministic nested active-space replay; no SCF required at load",
+  "repeat_builds": 2,
+  "repeat_scientific_fingerprints_identical": true,
+  "schema_version": 1
+}

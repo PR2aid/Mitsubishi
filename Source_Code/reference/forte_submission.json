@@ -1,0 +1,106 @@
+{
+  "budget": {
+    "advertised_per_shot_credits": 8,
+    "advertised_per_task_credits": 30,
+    "expected_qpu_credits": 2830,
+    "max_total_credits": 3000,
+    "note": "Estimate from qBraid pricing checked 2026-07-21; dashboard is authoritative."
+  },
+  "circuit": {
+    "ideal_xxyy_expectation": -0.2108994983707565,
+    "measurement": "XXYY",
+    "n_qubits": 4,
+    "qasm2_sha256": "4751aec7e8cb8a40e331b9d2e78d8c7e47aa27834e6258d0aefeb8b52ea9a862"
+  },
+  "device": {
+    "id": "aws:ionq:qpu:forte-1",
+    "metadata": {
+      "basis_gates": [
+        "cx",
+        "ry",
+        "ti",
+        "y",
+        "cti",
+        "not",
+        "csi",
+        "zz",
+        "crz",
+        "crx",
+        "cvi",
+        "cnot",
+        "id",
+        "rz",
+        "z",
+        "si",
+        "swap",
+        "cz",
+        "ccnot",
+        "x",
+        "rx",
+        "gpi2",
+        "cv",
+        "cy",
+        "cs",
+        "s",
+        "ct",
+        "t",
+        "h",
+        "ch",
+        "gpi",
+        "v",
+        "vi",
+        "cry"
+      ],
+      "batch_job_support": false,
+      "device_id": "aws:ionq:qpu:forte-1",
+      "name": "Forte 1 (AWS)",
+      "num_qubits": 36,
+      "paradigm": "gate_model",
+      "pricing": {
+        "perMinute": 0.0,
+        "perShot": 8.0,
+        "perTask": 30.0
+      },
+      "provider_name": "ionq",
+      "queue_depth": 2,
+      "runtime_config": {
+        "conversion_scheme": {
+          "conversion_graph": "<qbraid.transpiler.graph.ConversionGraph object at 0x7fde957f5fd0>",
+          "max_path_attempts": 3,
+          "max_path_depth": null
+        },
+        "options": {
+          "prepare": true,
+          "transform": true,
+          "transpile": true,
+          "validate": 2
+        },
+        "target_program_type": [
+          "braket",
+          "qasm3"
+        ]
+      },
+      "simulator": false,
+      "status": "ONLINE"
+    },
+    "status": "ONLINE"
+  },
+  "job_id": "aws:ionq:qpu:forte-1-4fb3-qjob-6a5f4676dc1c569a708af00b",
+  "record_type": "gic2026_h2_gqe_forte_submission",
+  "runtime": {
+    "numpy": "2.4.6",
+    "platform": "Linux-5.15.0-179-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "qbraid": "0.12.2",
+    "qbraid-core": "0.3.7",
+    "qiskit": "2.5.0"
+  },
+  "shots": 350,
+  "source": {
+    "archive_name": "gic2026-gqe_QBRAID_EVIDENCE_20260721T091629Z(1).zip",
+    "archive_sha256": "016b46ede3a4d4ee0d5c5c35ff8b0a2e50fb82f25d146302a97ed99383e7e02a",
+    "source_result_path": "results/qbraid_gqe_full.json",
+    "source_result_sha256": "7379b54d703c06de508637504d1fe0f4ac1a8e7b5dadca2687679377a60128bb"
+  },
+  "submitted_utc": "2026-07-21T10:14:14.688541Z"
+}

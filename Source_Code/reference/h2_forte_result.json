@@ -1,0 +1,42 @@
+{
+  "absolute_deviation": 0.06804235551361365,
+  "counts": {
+    "0000": 21,
+    "0001": 20,
+    "0010": 29,
+    "0011": 18,
+    "0100": 22,
+    "0101": 17,
+    "0110": 21,
+    "0111": 18,
+    "1000": 32,
+    "1001": 13,
+    "1010": 20,
+    "1011": 22,
+    "1100": 19,
+    "1101": 31,
+    "1110": 26,
+    "1111": 21
+  },
+  "device_id": "aws:ionq:qpu:forte-1",
+  "ideal_expectation": -0.2108994983707565,
+  "job_id": "aws:ionq:qpu:forte-1-4fb3-qjob-6a5f4676dc1c569a708af00b",
+  "measured_expectation": -0.14285714285714285,
+  "measurement": "XXYY",
+  "record_type": "gic2026_h2_gqe_forte_result",
+  "result_details": {
+    "cost": "2830",
+    "status": "JobStatus.COMPLETED",
+    "time_stamps": {
+      "createdAt": "2026-07-21 10:14:17.764000+00:00",
+      "endedAt": "2026-07-21 10:18:55.028000+00:00",
+      "executionDuration": 277264
+    }
+  },
+  "retrieved_utc": "2026-07-21T10:25:33.228076Z",
+  "shot_noise_standard_error": 0.052904005701288656,
+  "shots_requested": 350,
+  "shots_returned": 350,
+  "status": "COMPLETED",
+  "submission_record_sha256": "bcd649e5664228d3c68a17687cc28ed3bb4bc4190e4c02e283c40639c86ced63"
+}

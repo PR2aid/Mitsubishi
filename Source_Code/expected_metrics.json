@@ -1,0 +1,225 @@
+{
+  "schema_version": 2,
+  "note": "Scientific quantities are asserted; platform-dependent wall times are recorded but not pass/fail criteria. Table-3 resource counts are pinned to exact QASM rederivation in the locked Qiskit 2.5.0 environment for the resource-contract successor.",
+  "table3_resource_contract_provenance": {
+    "contract_kind": "EXACT_QASM_REDERIVED_RESOURCE_CONTRACT_V1",
+    "predecessor_source_identity_sha256": "a440f8ec60a5547113a6e721c0d6b170a7f5f92dd817992e9cd4f2270b2541ab",
+    "predecessor_candidate_artifact_aggregate_sha256": "40d732f3f328b94c7534048fcebfbe6f4a89447f458c1fbb2985c223ca187c9c",
+    "predecessor_candidate_manifest_canonical_sha256": "e6357639977f83ecf204f96fa431e922c8c021b62799e88ecc0da2773bc8d741",
+    "predecessor_two_process_replay_canonical_sha256": "84fb21014d1d9ad6cc5fedd149ac85308b4d765a2cf997b334c98a5ce137b36f",
+    "predecessor_provenance_diagnostic_script_sha256": "58d6e0f5415d895850fe7a040d8bec927a322efc75edd0c8a6783f7d9be98642",
+    "locked_qiskit_version": "2.5.0",
+    "measurement_protocol": {
+      "basis_gates": ["rz", "sx", "x", "cx"],
+      "optimization_level": 3,
+      "seed_transpiler": 3047,
+      "connectivity": "all-to-all",
+      "scope": "diagnostic logical compile; not device-native"
+    },
+    "exact_qasm_sha256": {
+      "BeH2-6": {
+        "generic_qasm": "7926c8c2868ae358d5a7479307c027b101a963cb3fb18e1886748a0b1cbddf78",
+        "structured_qasm": "7f9d5f6f1f33f81feec2c0033f0723202ed805f2990ec0a67d510f685e1c3d2d"
+      },
+      "BeH2-12": {
+        "generic_qasm": "27bb6c68bc93f2f073dd6d80ce3e7f5179c46ba3dbcd14f1eee30d2d2113a18d",
+        "structured_qasm": "73ff85a69941b10b93df011a74c364ce31c8292c52a9e078eced65540cf3b188"
+      },
+      "LiH-40": {
+        "generic_qasm": "201915c8dc6f24f6d3e5db5171c71b1dd3f87cf76acca6db85573a32db5d449b",
+        "structured_qasm": "9ba5b2af3f520e5b538c4ded56b99cb59fb21510fb9c231f8fc8ef9063f72dd2"
+      }
+    },
+    "evidence_interpretation": "Two isolated exact replay processes independently rederived the same QASM hashes and resources for BeH2-6, BeH2-12, and LiH-40. A bounded read-only scan found no artifact matching the predecessor's seven incompatible declared resource values. The final competition source preserves this corrected contract and validates a freshly generated full-run candidate directly; it does not claim the historical fixture's origin or require historical promotion evidence for full reproduction.",
+    "historical_fixture_origin_proven": false
+  },
+  "chemical_accuracy_mha": 1.6,
+  "givens_backbone_median_error_mha": {
+    "BeH2-6-partitioned": {"expected": 0.000101052, "absolute_tolerance": 0.0000005, "sector_dim": 9, "seed_count": 3, "reference_vqe_time_seconds": 0.279965162},
+    "BeH2-12-partitioned": {"expected": 0.649166933, "absolute_tolerance": 0.00005, "sector_dim": 225, "seed_count": 3, "reference_vqe_time_seconds": 1.043470871},
+    "BeH2-16-all": {"expected": 0.186663393, "absolute_tolerance": 0.00005, "sector_dim": 784, "seed_count": 1, "reference_vqe_time_seconds": 8.490495987},
+    "H2O-12-partitioned-heldout": {"expected": 3.128911379, "absolute_tolerance": 0.00005, "sector_dim": 225, "seed_count": 3, "reference_vqe_time_seconds": 1.105134246},
+    "N2-16-adaptive-depth": {"expected": 2.807957320, "absolute_tolerance": 0.00005, "sector_dim": 3136, "seed_count": 1, "reference_vqe_time_seconds": 36.514004217},
+    "LiH-40-all": {"expected": 0.000000067681, "absolute_tolerance": 0.000000001, "sector_dim": 400, "seed_count": 1, "reference_vqe_time_seconds": 33.717516774},
+    "LiH-40-partitioned": {"expected": 0.000830836, "absolute_tolerance": 0.0000005, "sector_dim": 400, "seed_count": 3, "reference_vqe_time_seconds": 15.707756662},
+    "LiH-44-all": {"expected": 0.000000068065, "absolute_tolerance": 0.000000001, "sector_dim": 484, "seed_count": 1, "reference_vqe_time_seconds": 39.728392364},
+    "LiH-48-all": {"expected": 0.000015795, "absolute_tolerance": 0.00000005, "sector_dim": 576, "seed_count": 1, "reference_vqe_time_seconds": 53.895077676}
+  },
+  "givens_backbone_rhf_error_mha": {
+    "BeH2-6-partitioned": {"expected": 1.021486706, "absolute_tolerance": 0.000001},
+    "BeH2-12-partitioned": {"expected": 3.972714628, "absolute_tolerance": 0.000001},
+    "BeH2-16-all": {"expected": 8.351623739, "absolute_tolerance": 0.000001},
+    "H2O-12-partitioned-heldout": {"expected": 6.531403467, "absolute_tolerance": 0.000001},
+    "N2-16-adaptive-depth": {"expected": 80.252334657, "absolute_tolerance": 0.000001},
+    "LiH-40-all": {"expected": 16.386117723, "absolute_tolerance": 0.000001},
+    "LiH-40-partitioned": {"expected": 16.386117723, "absolute_tolerance": 0.000001},
+    "LiH-44-all": {"expected": 18.939232721, "absolute_tolerance": 0.000001},
+    "LiH-48-all": {"expected": 19.197582404, "absolute_tolerance": 0.000001}
+  },
+  "adaptive_topology": {
+    "BeH2-6": {"decision": "ACCEPT_CONSTRAINED_PARETO_FRONT_TRADEOFF", "static_left": [2], "selected_left": [1]},
+    "BeH2-12": {"decision": "ACCEPT_CONSTRAINED_PARETO_FRONT_TRADEOFF", "static_left": [0, 1, 5], "selected_left": [0, 3, 4]},
+    "H2O-12-heldout": {"decision": "RETAIN_STATIC_NO_ADAPTIVE_CANDIDATE_PASSED_ALL_GATES", "static_left": [1, 3, 5], "selected_left": [1, 3, 5]},
+    "LiH-40": {"decision": "RETAIN_STATIC_NO_ADAPTIVE_CANDIDATE_PASSED_ALL_GATES", "static_left": [0, 1, 4, 5, 8, 9, 10, 13, 17, 18], "selected_left": [0, 1, 4, 5, 8, 9, 10, 13, 17, 18]}
+  },
+  "structured_resources": {
+    "BeH2-6": {"legacy_cx": 374, "structured_cx": 65, "legacy_depth": 1278, "structured_depth": 192, "minimum_fidelity": 0.9999999999},
+    "BeH2-12": {"legacy_cx": 1325, "structured_cx": 235, "legacy_depth": 2316, "structured_depth": 343, "minimum_fidelity": 0.9999999999},
+    "LiH-40": {"legacy_cx": 17190, "structured_cx": 3091, "legacy_depth": 9483, "structured_depth": 1537, "fidelity_scope": "compositional exact primitive tests; no dense 40q state allocated"}
+  },
+  "warm_start": {
+    "BeH2-6-12-16": {"minimum_embedding_fidelity": 0.9999999999, "cascade_to_direct_call_ratio": 2.172185430, "absolute_tolerance": 0.001},
+    "LiH-6-12-40": {"minimum_embedding_fidelity": 0.9999999999, "cascade_to_direct_call_ratio": 2.172185430, "absolute_tolerance": 0.001}
+  },
+  "h2_transformer_gqe": {
+    "rhf_error_mha": 20.850145755,
+    "gqe_error_mha": 0.133664647,
+    "relative_error_reduction_percent": 99.358922234,
+    "absolute_error_hartree": 0.000133664647,
+    "absolute_tolerance_hartree": 0.000005,
+    "estimated_two_qubit_gate_count": 58,
+    "max_iters": 25,
+    "num_samples": 5,
+    "operator_pool_size": 144,
+    "candidate_evaluations": 125,
+    "selected_operator_count": 10,
+    "selected_nonlocal_operator_count": 10
+  },
+  "finite_shot_beh2_6": {
+    "error_vs_casci_mha": 0.857458895,
+    "absolute_tolerance_mha": 0.03,
+    "shots_per_group": 20000,
+    "commuting_groups": 9,
+    "total_circuit_shots": 180000,
+    "standard_error_hartree": 0.00224238,
+    "seed": 7,
+    "backend": "qiskit.primitives.BackendEstimatorV2(AerSimulator)"
+  },
+  "qpd_6": {"maximum_absolute_difference_hartree": 1e-10, "enumerated_branches": 10000, "half_qubits": [4, 2]},
+  "gqe_qsci_objective": {
+    "beh2-6": {
+      "decision": "DO_NOT_PROMOTE_QSCI_OBJECTIVE_RETAIN_EXACT_ENERGY",
+      "raw_qsci_minus_exact_mha": 0.0,
+      "absolute_tolerance_mha": 0.000001,
+      "exact_heldout_median_mha": 0.018450472078,
+      "qsci_heldout_median_mha": 0.018450472078,
+      "bootstrap_95_interval_mha": [0.0, 0.0],
+      "qsci_selection_source": "identity_guard",
+      "qsci_selected_nonidentity": false,
+      "qsci_k": 4,
+      "primary_shots": 2000,
+      "trial_count": 30,
+      "phi_max": 15.0,
+      "raw_state_degradation_within_chemical_accuracy": true,
+      "qsci_matched_control_medians_mha": {"identity": 0.018450472078, "random_feasible": 0.018450472078, "stratified_greedy": 0.018450472078}
+    },
+    "beh2-12": {
+      "decision": "DO_NOT_PROMOTE_QSCI_OBJECTIVE_RETAIN_EXACT_ENERGY",
+      "raw_qsci_minus_exact_mha": 0.0,
+      "absolute_tolerance_mha": 0.000001,
+      "exact_heldout_median_mha": 0.724780064536,
+      "qsci_heldout_median_mha": 0.724780064536,
+      "bootstrap_95_interval_mha": [0.0, 0.0],
+      "qsci_selection_source": "identity_guard",
+      "qsci_selected_nonidentity": false,
+      "qsci_k": 16,
+      "primary_shots": 10000,
+      "trial_count": 30,
+      "phi_max": 15.0,
+      "raw_state_degradation_within_chemical_accuracy": true,
+      "qsci_matched_control_medians_mha": {"identity": 0.724780064536, "random_feasible": 0.729224215651, "stratified_greedy": 0.724780064536}
+    },
+    "lih-40": {
+      "decision": "DO_NOT_PROMOTE_QSCI_OBJECTIVE_RETAIN_EXACT_ENERGY",
+      "raw_qsci_minus_exact_mha": 1.920360832,
+      "absolute_tolerance_mha": 0.000001,
+      "exact_heldout_median_mha": 5.238430441104,
+      "qsci_heldout_median_mha": 5.229077257588,
+      "paired_median_delta_mha": -0.011813602,
+      "paired_median_absolute_tolerance_mha": 0.000001,
+      "bootstrap_95_interval_mha": [-0.146622100185, 0.127537294675],
+      "qsci_selection_source": "cudaqx_sampled_minimum",
+      "qsci_selected_nonidentity": true,
+      "qsci_k": 32,
+      "primary_shots": 10000,
+      "trial_count": 30,
+      "phi_max": 15.0,
+      "raw_state_degradation_within_chemical_accuracy": false,
+      "qsci_matched_control_medians_mha": {"identity": 5.238430441104, "random_feasible": 5.253215437247, "stratified_greedy": 5.238430441104}
+    }
+  },
+  "gqe_residual_exact_energy": {
+    "beh2-6": {
+      "candidate_evaluations": 126,
+      "frozen_backbone_error_mha": 0.000000034482639,
+      "sampled_nonidentity_error_mha": 0.001048994640,
+      "guarded_error_mha": 0.000000034482639,
+      "absolute_tolerance_mha": 0.000001,
+      "selection_source": "identity_guard",
+      "heldout_median_errors_mha": {
+        "exact_energy_transformer": 0.018450472078,
+        "identity": 0.018450472078,
+        "random_feasible": 0.018450472078,
+        "stratified_greedy": 0.018450472078
+      }
+    },
+    "beh2-12": {
+      "candidate_evaluations": 126,
+      "frozen_backbone_error_mha": 0.651671006462,
+      "sampled_nonidentity_error_mha": 0.653761313838,
+      "guarded_error_mha": 0.651671006462,
+      "absolute_tolerance_mha": 0.000001,
+      "selection_source": "identity_guard",
+      "heldout_median_errors_mha": {
+        "exact_energy_transformer": 0.724780064536,
+        "identity": 0.724780064536,
+        "random_feasible": 0.724780064536,
+        "stratified_greedy": 0.724780064536
+      }
+    },
+    "lih-40": {
+      "candidate_evaluations": 126,
+      "frozen_backbone_error_mha": 0.000685027324,
+      "sampled_nonidentity_error_mha": 0.001263282881,
+      "guarded_error_mha": 0.000685027324,
+      "absolute_tolerance_mha": 0.000001,
+      "selection_source": "identity_guard",
+      "heldout_median_errors_mha": {
+        "exact_energy_transformer": 5.238430441104,
+        "identity": 5.238430441104,
+        "random_feasible": 5.238430441104,
+        "stratified_greedy": 5.238430441104
+      }
+    }
+  },
+  "twenty_plus_twenty_projection": {
+    "status": "RESOURCE_PROJECTION_ONLY_NOT_EXECUTED",
+    "spin_qubits_per_fragment": [20, 20],
+    "theoretical_phi": 2.485077523577975,
+    "theoretical_phi_squared": 6.175610298192442,
+    "cross_pair_double_qpd_available": false,
+    "sampled_qpd_estimator_available": false,
+    "joint_cut_fragment_qsci_available": false,
+    "paid_execution_allowed": false
+  },
+  "forte_h2_reference": {
+    "shots": 350,
+    "device_id": "aws:ionq:qpu:forte-1",
+    "job_id": "aws:ionq:qpu:forte-1-4fb3-qjob-6a5f4676dc1c569a708af00b",
+    "status": "COMPLETED",
+    "historical_cost_credits": 2830,
+    "provider_duration_seconds": 277.264,
+    "source_logical_cx": 58,
+    "source_logical_depth": 108,
+    "qasm2_sha256": "4751aec7e8cb8a40e331b9d2e78d8c7e47aa27834e6258d0aefeb8b52ea9a862",
+    "submission_record_sha256": "bcd649e5664228d3c68a17687cc28ed3bb4bc4190e4c02e283c40639c86ced63",
+    "result_record_sha256": "ded0b9087c4effe64bcdd478ec758f8a841fac7e1275789bf6f87d02f6e0c53a",
+    "source_reference_sha256": "7b907223404cc9f27c4f920da06b0bc98ec20fd010ad383f03d5a909985221f6",
+    "ideal_expectation": -0.210899498,
+    "measured_expectation": -0.142857143,
+    "rhf_expectation": 0.0,
+    "shot_noise_standard_error": 0.052904006,
+    "exact_95_interval": [-0.247808, -0.035469],
+    "interval_absolute_tolerance": 0.000002
+  }
+}
